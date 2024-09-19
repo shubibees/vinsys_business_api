@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "cebb7731-dfd1-4a16-b546-89a28f0785ef",
+		"name": "business",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get-business-region-country",
+			"id": "ddcb3199-1f3e-4718-85f7-d027201cca7a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{URL}}get-business-home"
+			},
+			"response": []
+		},
+		{
+			"name": "get-business-course-country",
+			"id": "7808857c-9fd1-4241-94e0-cb22c3f03a13",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{URL}}get-business-course-country"
+			},
+			"response": []
+		},
+		{
+			"name": "get-business-delivery-formate_list",
+			"id": "7bc855d0-6275-47fd-9a7b-79d96a60fdd3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "get-business-course-title-search",
+			"id": "269eed08-df4d-471c-92eb-4f84b956e4ac",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "jwt",
+					"jwt": {
+						"secret": "98a144c773b6518a2e08d0b147edd10761bd35dd6cf5f8f0684a88a7c14548d0",
+						"addTokenTo": "header",
+						"payload": "",
+						"algorithm": "HS256",
+						"isSecretBase64Encoded": false,
+						"headerPrefix": "Bearer",
+						"queryParamKey": "token",
+						"header": "{}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}get-business-course-title-search?&search=Web",
+					"host": [
+						"{{URL}}get-business-course-title-search"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": null
+						},
+						{
+							"key": "search",
+							"value": "Web"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
