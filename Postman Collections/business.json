@@ -210,6 +210,18 @@
 				"header": []
 			},
 			"response": []
+		},
+		{
+			"name": "get-business-course-list",
+			"id": "cc30eb57-922c-4e08-bfa1-65d8a51bcbc7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	]
 }
