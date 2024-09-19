@@ -12,9 +12,39 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "jwt",
+					"jwt": {
+						"secret": "98a144c773b6518a2e08d0b147edd10761bd35dd6cf5f8f0684a88a7c14548d",
+						"addTokenTo": "header",
+						"payload": "",
+						"algorithm": "HS256",
+						"isSecretBase64Encoded": false,
+						"headerPrefix": "Bearer",
+						"queryParamKey": "token",
+						"header": "{}"
+					}
+				},
 				"method": "GET",
-				"header": [],
-				"url": "{{URL}}get-business-home"
+				"header": [
+					{
+						"key": "region_id",
+						"value": "1",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{URL}}get-business-region-country?region_id=1",
+					"host": [
+						"{{URL}}get-business-region-country"
+					],
+					"query": [
+						{
+							"key": "region_id",
+							"value": "1"
+						}
+					]
+				}
 			},
 			"response": []
 		},
@@ -25,6 +55,19 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "jwt",
+					"jwt": {
+						"secret": "98a144c773b6518a2e08d0b147edd10761bd35dd6cf5f8f0684a88a7c14548d0",
+						"addTokenTo": "header",
+						"payload": "",
+						"algorithm": "HS256",
+						"isSecretBase64Encoded": false,
+						"headerPrefix": "Bearer",
+						"queryParamKey": "token",
+						"header": "{}"
+					}
+				},
 				"method": "GET",
 				"header": [],
 				"url": "{{URL}}get-business-course-country"
@@ -38,8 +81,22 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "jwt",
+					"jwt": {
+						"secret": "98a144c773b6518a2e08d0b147edd10761bd35dd6cf5f8f0684a88a7c14548d",
+						"addTokenTo": "header",
+						"payload": "",
+						"algorithm": "HS256",
+						"isSecretBase64Encoded": false,
+						"headerPrefix": "Bearer",
+						"queryParamKey": "token",
+						"header": "{}"
+					}
+				},
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": "{{URL}}get-business-delivery-formate_list"
 			},
 			"response": []
 		},
@@ -66,7 +123,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{URL}}get-business-course-title-search?&search=Web",
+					"raw": "{{URL}}get-business-course-title-search?&search=Web Application Penetration",
 					"host": [
 						"{{URL}}get-business-course-title-search"
 					],
@@ -77,7 +134,7 @@
 						},
 						{
 							"key": "search",
-							"value": "Web"
+							"value": "Web Application Penetration"
 						}
 					]
 				}
