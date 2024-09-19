@@ -58,7 +58,7 @@
 				"auth": {
 					"type": "jwt",
 					"jwt": {
-						"secret": "98a144c773b6518a2e08d0b147edd10761bd35dd6cf5f8f0684a88a7c14548d0",
+						"secret": "{{secrete_key}}",
 						"addTokenTo": "header",
 						"payload": "",
 						"algorithm": "HS256",
@@ -84,7 +84,7 @@
 				"auth": {
 					"type": "jwt",
 					"jwt": {
-						"secret": "98a144c773b6518a2e08d0b147edd10761bd35dd6cf5f8f0684a88a7c14548d",
+						"secret": "{{secrete_key}}",
 						"addTokenTo": "header",
 						"payload": "",
 						"algorithm": "HS256",
