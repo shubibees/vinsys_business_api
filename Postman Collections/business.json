@@ -198,6 +198,18 @@
 					"body": "{\n    \"courses_location\": [],\n    \"search_list\": [\n        {\n            \"id\": 1,\n            \"title\": \"Web Application Penetration Testing\",\n            \"description\": \"<p>Have you been trying to protect your company from web-based vulnerabilities?<br />\\r\\nThe comprehensive Web Application Penetration Testing course offers a comprehensive 30-hour training which equips you with the knowledge and abilities to recognise, exploit and eliminate security vulnerabilities in web applications. With guidance from Vinsys&rsquo; experts with over 30 yeats of experience, you can easily safeguard your data and protect your apps.<br />\\r\\n&nbsp;</p>\",\n            \"slug\": \"web-application-penetration-testing\",\n            \"industry\": null\n        },\n        {\n            \"id\": 2,\n            \"title\": \"Web Application Penetration Testing\",\n            \"description\": \"<p>Have you been trying to protect your company from web-based vulnerabilities?<br />\\r\\nThe comprehensive Web Application Penetration Testing course offers a comprehensive 30-hour training which equips you with the knowledge and abilities to recognise, exploit and eliminate security vulnerabilities in web applications. With guidance from Vinsys&rsquo; experts with over 30 yeats of experience, you can easily safeguard your data and protect your apps.<br />\\r\\n&nbsp;</p>\",\n            \"slug\": \"web-application-penetration-testing\",\n            \"industry\": {\n                \"id\": 2,\n                \"title\": \"Leadership Management & Coaching Services\",\n                \"slug\": \"leadership-management\",\n                \"banner\": \"\",\n                \"banner_alt\": null,\n                \"icon\": \"\",\n                \"icon_alt\": null,\n                \"description\": \"<p>Leadership Management &amp; Coaching Services (Test)</p>\",\n                \"document\": \"\",\n                \"meta_title\": null,\n                \"meta_description\": \"\",\n                \"meta_key\": null,\n                \"meta_image\": \"\",\n                \"og_title\": null,\n                \"og_description\": \"\",\n                \"og_image\": \"\"\n            }\n        }\n    ]\n}"
 				}
 			]
+		},
+		{
+			"name": "get-industry-list",
+			"id": "6e9b75bd-b69a-4a61-9fa5-e6217c61a20d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	]
 }
