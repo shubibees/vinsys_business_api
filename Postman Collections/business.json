@@ -110,7 +110,7 @@
 				"auth": {
 					"type": "jwt",
 					"jwt": {
-						"secret": "98a144c773b6518a2e08d0b147edd10761bd35dd6cf5f8f0684a88a7c14548d0",
+						"secret": "{{secrete_key}}",
 						"addTokenTo": "header",
 						"payload": "",
 						"algorithm": "HS256",
@@ -123,7 +123,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{URL}}get-business-course-title-search?&search=Web Application Penetration",
+					"raw": "{{URL}}get-business-course-title-search?&search=Web Application Penetration&course_country_id=229",
 					"host": [
 						"{{URL}}get-business-course-title-search"
 					],
@@ -135,11 +135,69 @@
 						{
 							"key": "search",
 							"value": "Web Application Penetration"
+						},
+						{
+							"key": "course_country_id",
+							"value": "229",
+							"type": "text"
 						}
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"id": "1a89d7ee-8e37-4bb4-bf1f-4bb2b00877ef",
+					"name": "get-business-course-title-search",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}get-business-course-title-search?&search=Web Application Penetration&course_country_id=229",
+							"host": [
+								"{{URL}}get-business-course-title-search"
+							],
+							"query": [
+								{
+									"key": null,
+									"value": null
+								},
+								{
+									"key": "search",
+									"value": "Web Application Penetration"
+								},
+								{
+									"key": "course_country_id",
+									"value": "229"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Thu, 19 Sep 2024 10:52:42 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "1608"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"courses_location\": [],\n    \"search_list\": [\n        {\n            \"id\": 1,\n            \"title\": \"Web Application Penetration Testing\",\n            \"description\": \"<p>Have you been trying to protect your company from web-based vulnerabilities?<br />\\r\\nThe comprehensive Web Application Penetration Testing course offers a comprehensive 30-hour training which equips you with the knowledge and abilities to recognise, exploit and eliminate security vulnerabilities in web applications. With guidance from Vinsys&rsquo; experts with over 30 yeats of experience, you can easily safeguard your data and protect your apps.<br />\\r\\n&nbsp;</p>\",\n            \"slug\": \"web-application-penetration-testing\",\n            \"industry\": null\n        },\n        {\n            \"id\": 2,\n            \"title\": \"Web Application Penetration Testing\",\n            \"description\": \"<p>Have you been trying to protect your company from web-based vulnerabilities?<br />\\r\\nThe comprehensive Web Application Penetration Testing course offers a comprehensive 30-hour training which equips you with the knowledge and abilities to recognise, exploit and eliminate security vulnerabilities in web applications. With guidance from Vinsys&rsquo; experts with over 30 yeats of experience, you can easily safeguard your data and protect your apps.<br />\\r\\n&nbsp;</p>\",\n            \"slug\": \"web-application-penetration-testing\",\n            \"industry\": {\n                \"id\": 2,\n                \"title\": \"Leadership Management & Coaching Services\",\n                \"slug\": \"leadership-management\",\n                \"banner\": \"\",\n                \"banner_alt\": null,\n                \"icon\": \"\",\n                \"icon_alt\": null,\n                \"description\": \"<p>Leadership Management &amp; Coaching Services (Test)</p>\",\n                \"document\": \"\",\n                \"meta_title\": null,\n                \"meta_description\": \"\",\n                \"meta_key\": null,\n                \"meta_image\": \"\",\n                \"og_title\": null,\n                \"og_description\": \"\",\n                \"og_image\": \"\"\n            }\n        }\n    ]\n}"
+				}
+			]
 		}
 	]
 }
