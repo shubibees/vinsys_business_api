@@ -15,8 +15,33 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": {
+								"secret": "{{secrete_key}}",
+								"addTokenTo": "header",
+								"payload": "",
+								"algorithm": "HS256",
+								"isSecretBase64Encoded": false,
+								"headerPrefix": "Bearer",
+								"queryParamKey": "token",
+								"header": "{}"
+							}
+						},
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "{{URL}}get-business-home?country_id=229",
+							"host": [
+								"{{URL}}get-business-home"
+							],
+							"query": [
+								{
+									"key": "country_id",
+									"value": "229"
+								}
+							]
+						}
 					},
 					"response": []
 				},
@@ -27,21 +52,22 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
-						"header": []
-					},
-					"response": []
-				},
-				{
-					"name": "get-business-training-contact",
-					"id": "344de8a7-4299-4954-9a4b-5441adcae767",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": {
+								"secret": "{{secrete_key}}",
+								"addTokenTo": "header",
+								"payload": "",
+								"algorithm": "HS256",
+								"isSecretBase64Encoded": false,
+								"headerPrefix": "Bearer",
+								"queryParamKey": "token",
+								"header": "{}"
+							}
+						},
 						"method": "GET",
 						"header": [],
-						"url": "{{URL}}get-business-training-contact"
+						"url": "{{URL}}get-business-about-whyvinsys-page"
 					},
 					"response": []
 				}
