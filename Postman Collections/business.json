@@ -307,8 +307,42 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "jwt",
+					"jwt": {
+						"secret": "{{secrete_key}}",
+						"addTokenTo": "header",
+						"payload": "",
+						"algorithm": "HS256",
+						"isSecretBase64Encoded": false,
+						"headerPrefix": "Bearer",
+						"queryParamKey": "token",
+						"header": "{}"
+					}
+				},
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "{{URL}}get-business-course-slug/web-application-penetration-testing?course_country_id=229&category_slug=leadership-management",
+					"host": [
+						"{{URL}}get-business-course-slug"
+					],
+					"path": [
+						"web-application-penetration-testing"
+					],
+					"query": [
+						{
+							"key": "course_country_id",
+							"value": "229",
+							"type": "text"
+						},
+						{
+							"key": "category_slug",
+							"value": "leadership-management",
+							"type": "text"
+						}
+					]
+				}
 			},
 			"response": []
 		}
