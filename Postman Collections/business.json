@@ -33,14 +33,15 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "get-business-training-contact",
 					"id": "344de8a7-4299-4954-9a4b-5441adcae767",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": "{{URL}}get-business-training-contact"
 					},
 					"response": []
 				}
