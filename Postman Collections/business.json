@@ -299,6 +299,18 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "get-business-course-slug",
+			"id": "2fe4e383-99a0-412a-8c81-8d3613983565",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	]
 }
