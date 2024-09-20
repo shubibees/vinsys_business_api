@@ -9,7 +9,7 @@
 			"name": "page",
 			"item": [
 				{
-					"name": "home",
+					"name": "get-business-home",
 					"id": "dbc771ed-eaaf-495f-8d42-59dd9e12326d",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
