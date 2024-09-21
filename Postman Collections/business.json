@@ -167,8 +167,31 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
-						"header": []
+						"auth": {
+							"type": "jwt",
+							"jwt": {
+								"secret": "{{secrete_key}}",
+								"addTokenTo": "header",
+								"payload": "",
+								"algorithm": "HS256",
+								"isSecretBase64Encoded": false,
+								"headerPrefix": "Bearer",
+								"queryParamKey": "token",
+								"header": "{}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"page_url\": \"https://example.com/form\",\r\n    \"referer\": \"https://example.com/referer\",\r\n    \"form_type\": \"registration\",\r\n    \"name\": \"John Doe\",\r\n    \"phone_number\": \"+1234567890\",\r\n    \"email\": \"john.doe@example.com\",\r\n    \"designation\": \"Web Development\",\r\n    \"country\": 101,\r\n    \"state\": 23,\r\n    \"city\": \"iojsfdisdsa\",\r\n    \"company\": \"iojdsfiaj\",\r\n    \"course\": \"iojdfisa\",\r\n    \"message\": \"Looking forward to joining the course!\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{URL}}post-training-form-data-new"
 					},
 					"response": []
 				}
