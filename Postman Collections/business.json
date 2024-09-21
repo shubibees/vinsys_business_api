@@ -473,13 +473,11 @@
 					"query": [
 						{
 							"key": "course_country_id",
-							"value": "229",
-							"type": "text"
+							"value": "229"
 						},
 						{
 							"key": "category_slug",
-							"value": "leadership-management",
-							"type": "text"
+							"value": "leadership-management"
 						}
 					]
 				}
