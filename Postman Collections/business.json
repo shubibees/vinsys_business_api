@@ -87,6 +87,24 @@
 			"id": "f1ca4d45-525d-42bb-a452-8b81482a3db7"
 		},
 		{
+			"name": "Enquery",
+			"item": [
+				{
+					"name": "post-business-contact-form-data-new",
+					"id": "259fbca3-78ca-4154-ba09-78de6bbbcf84",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			],
+			"id": "a312a616-42bc-4b21-8a31-f4283c5f5c99"
+		},
+		{
 			"name": "get-business-region-country",
 			"id": "ddcb3199-1f3e-4718-85f7-d027201cca7a",
 			"protocolProfileBehavior": {
