@@ -197,7 +197,7 @@
 								}
 							}
 						},
-						"url": "{{URL}}post-training-form-data-new"
+						"url": "{{URL}}post-business-form-data-new"
 					},
 					"response": []
 				}
