@@ -67,7 +67,18 @@
 						},
 						"method": "GET",
 						"header": [],
-						"url": "{{URL}}get-business-about-whyvinsys-page"
+						"url": {
+							"raw": "{{URL}}get-business-about-whyvinsys-page?country_id=229",
+							"host": [
+								"{{URL}}get-business-about-whyvinsys-page"
+							],
+							"query": [
+								{
+									"key": "country_id",
+									"value": "229"
+								}
+							]
+						}
 					},
 					"response": []
 				},
@@ -78,8 +89,33 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": {
+								"secret": "{{secrete_key}}",
+								"addTokenTo": "header",
+								"payload": "",
+								"algorithm": "HS256",
+								"isSecretBase64Encoded": false,
+								"headerPrefix": "Bearer",
+								"queryParamKey": "token",
+								"header": "{}"
+							}
+						},
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "{{URL}}get-business-training-contact?country_id=229",
+							"host": [
+								"{{URL}}get-business-training-contact"
+							],
+							"query": [
+								{
+									"key": "country_id",
+									"value": "229"
+								}
+							]
+						}
 					},
 					"response": []
 				}
@@ -96,8 +132,31 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
-						"header": []
+						"auth": {
+							"type": "jwt",
+							"jwt": {
+								"secret": "{{secrete_key}}",
+								"addTokenTo": "header",
+								"payload": "",
+								"algorithm": "HS256",
+								"isSecretBase64Encoded": false,
+								"headerPrefix": "Bearer",
+								"queryParamKey": "token",
+								"header": "{}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"page_url\": \"https://example.com/form\",\r\n    \"referer\": \"https://example.com/referer\",\r\n    \"form_type\": \"registration\",\r\n    \"name\": \"John Doe\",\r\n    \"phone_number\": \"+1234567890\",\r\n    \"email\": \"john.doe@example.com\",\r\n    \"course_name\": \"Web Development\",\r\n    \"company\": \"Tech Corp\",\r\n    \"city\": \"New York\",\r\n    \"looking_for\": \"Online Training\",\r\n    \"location\": \"America\",\r\n    \"message\": \"Looking forward to joining the course!\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{URL}}post-business-contact-form-data-new"
 					},
 					"response": []
 				}
