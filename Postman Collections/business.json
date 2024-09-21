@@ -159,6 +159,18 @@
 						"url": "{{URL}}post-business-contact-form-data-new"
 					},
 					"response": []
+				},
+				{
+					"name": "post-training-form-data-new",
+					"id": "798a460b-61ea-417c-8dfc-dba77aed2e37",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "a312a616-42bc-4b21-8a31-f4283c5f5c99"
