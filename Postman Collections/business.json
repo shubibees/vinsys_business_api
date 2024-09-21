@@ -70,6 +70,18 @@
 						"url": "{{URL}}get-business-about-whyvinsys-page"
 					},
 					"response": []
+				},
+				{
+					"name": "get-business-training-contact",
+					"id": "d4d93294-de85-426b-9a49-e3af7ca4ee93",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "f1ca4d45-525d-42bb-a452-8b81482a3db7"
