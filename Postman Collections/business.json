@@ -435,11 +435,11 @@
 						"header": "{}"
 					}
 				},
-				"method": "GET",
+				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"course_country_id\": 229,\r\n    \"user_country_id\": 229,\r\n    \"industry_id\": [5]\r\n}",
+					"raw": "{\r\n    // \"page\": 1,\r\n    // \"page_size\": 6,\r\n    \"course_country_id\": 101,\r\n    \"user_country_id\": 101,\r\n    // \"city_id\": 1,\r\n    \"industry_id\": [2, 3],\r\n    // \"delivery_format_id\": [1, 2],\r\n    // \"industry_slug\": [\"tech\", \"business\"],\r\n    // \"delivery_format_slug\": [\"online\", \"offline\"],\r\n    // \"start_date\": \"2023-01-01\",\r\n    // \"end_date\": \"2023-12-31\",\r\n    // \"gtr\": 1,\r\n    // \"search\": \"data science\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
