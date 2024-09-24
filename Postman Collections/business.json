@@ -31,9 +31,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}get-business-home?country_id=229",
+							"raw": "{{URL}}get-training-home?country_id=229",
 							"host": [
-								"{{URL}}get-business-home"
+								"{{URL}}get-training-home"
 							],
 							"query": [
 								{
@@ -126,10 +126,23 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": {
+								"secret": "{{secrete_key}}",
+								"addTokenTo": "header",
+								"payload": "",
+								"algorithm": "HS256",
+								"isSecretBase64Encoded": false,
+								"headerPrefix": "Bearer",
+								"queryParamKey": "token",
+								"header": "{}"
+							}
+						},
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}get-page-banner-seo/?slug=training&country_id=101",
+							"raw": "{{URL}}get-page-banner-seo/?slug=business-home&country_id=229",
 							"host": [
 								"{{URL}}get-page-banner-seo"
 							],
@@ -139,11 +152,11 @@
 							"query": [
 								{
 									"key": "slug",
-									"value": "training"
+									"value": "business-home"
 								},
 								{
 									"key": "country_id",
-									"value": "101"
+									"value": "229"
 								}
 							]
 						}
@@ -424,6 +437,15 @@
 				},
 				"method": "GET",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
 					"raw": "{{URL}}get-business-course-list?course_country_id=229&page=1&industry_slug=leadership-management",
 					"host": [
@@ -500,12 +522,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{URL}}get-business-course-slug/web-application-penetration-testing?course_country_id=229&category_slug=leadership-management",
+					"raw": "{{URL}}get-business-course-slug/web-application-penetration-testing-new?course_country_id=229&category_slug=leadership-management&user_country_id=229",
 					"host": [
 						"{{URL}}get-business-course-slug"
 					],
 					"path": [
-						"web-application-penetration-testing"
+						"web-application-penetration-testing-new"
 					],
 					"query": [
 						{
@@ -515,6 +537,11 @@
 						{
 							"key": "category_slug",
 							"value": "leadership-management"
+						},
+						{
+							"key": "user_country_id",
+							"value": "229",
+							"type": "text"
 						}
 					]
 				}
