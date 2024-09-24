@@ -118,6 +118,37 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "banner",
+					"id": "2f1ee89c-0cc6-4412-85e6-034b5c26b0b2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}get-page-banner-seo/?slug=training&country_id=101",
+							"host": [
+								"{{URL}}get-page-banner-seo"
+							],
+							"path": [
+								""
+							],
+							"query": [
+								{
+									"key": "slug",
+									"value": "training"
+								},
+								{
+									"key": "country_id",
+									"value": "101"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "f1ca4d45-525d-42bb-a452-8b81482a3db7"
