@@ -31,9 +31,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}get-training-home?country_id=229",
+							"raw": "{{URL}}get-business-home?country_id=229",
 							"host": [
-								"{{URL}}get-training-home"
+								"{{URL}}get-business-home"
 							],
 							"query": [
 								{
