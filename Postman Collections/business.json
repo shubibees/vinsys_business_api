@@ -439,7 +439,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"course_country_id\": 229,\r\n    \"user_country_id\": 229,\r\n    \"industry_id\": [1, 2, 3]\r\n}",
+					"raw": "{\r\n    \"course_country_id\": 229,\r\n    \"user_country_id\": 229,\r\n    \"industry_id\": [5]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
