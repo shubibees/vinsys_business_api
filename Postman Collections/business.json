@@ -193,7 +193,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"page_url\": \"https://example.com/form\",\r\n    \"referer\": \"https://example.com/referer\",\r\n    \"form_type\": \"registration\",\r\n    \"name\": \"John Doe\",\r\n    \"phone_number\": \"+1234567890\",\r\n    \"email\": \"john.doe@example.com\",\r\n    \"course_name\": \"Web Development\",\r\n    \"company\": \"Tech Corp\",\r\n    \"city\": \"New York\",\r\n    \"looking_for\": \"Online Training\",\r\n    \"location\": \"America\",\r\n    \"message\": \"Looking forward to joining the course!\"\r\n}\r\n",
+							"raw": "{\r\n    \"page_url\": \"https://example.com/form\",\r\n    \"referer\": \"https://example.com/referer\",\r\n    \"form_type\": \"registration\",\r\n    \"name\": \"John Doe\",\r\n    \"phone_number\": \"+1234567890\",\r\n    \"email\": \"john.doe@example.com\",\r\n    \"course_name\": \"Web Development\",\r\n    \"company\": \"Tech Corp\",\r\n    \"country\":\"india\",\r\n    \"city\": \"New York\",\r\n    \"looking_for\": \"Online Training\",\r\n    \"location\": \"America\",\r\n    \"message\": \"Looking forward to joining the course!\"\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -458,7 +458,7 @@
 					}
 				},
 				"url": {
-					"raw": "{{URL}}get-business-course-list?course_country_id=229&user_country_id=229&industry_id=2&industry_id=3&delivery_format_id=1",
+					"raw": "{{URL}}get-business-course-list?course_country_id=229&user_country_id=229&industry_slug=leadership-management",
 					"host": [
 						"{{URL}}get-business-course-list"
 					],
@@ -483,15 +483,18 @@
 						},
 						{
 							"key": "industry_id",
-							"value": "2"
+							"value": "2",
+							"disabled": true
 						},
 						{
 							"key": "industry_id",
-							"value": "3"
+							"value": "3",
+							"disabled": true
 						},
 						{
 							"key": "delivery_format_id",
-							"value": "1"
+							"value": "1",
+							"disabled": true
 						},
 						{
 							"key": "delivery_format_id",
@@ -500,8 +503,7 @@
 						},
 						{
 							"key": "industry_slug",
-							"value": "tech",
-							"disabled": true
+							"value": "leadership-management"
 						},
 						{
 							"key": "industry_slug",
