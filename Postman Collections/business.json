@@ -458,7 +458,7 @@
 					}
 				},
 				"url": {
-					"raw": "{{URL}}get-business-course-list?course_country_id=229&user_country_id=229&industry_slug=leadership-management",
+					"raw": "{{URL}}get-business-course-list?course_country_id=229&user_country_id=229",
 					"host": [
 						"{{URL}}get-business-course-list"
 					],
@@ -503,10 +503,6 @@
 						},
 						{
 							"key": "industry_slug",
-							"value": "leadership-management"
-						},
-						{
-							"key": "industry_slug",
 							"value": "business",
 							"disabled": true
 						},
@@ -541,8 +537,8 @@
 							"disabled": true
 						},
 						{
-							"key": "page_size",
-							"value": "",
+							"key": "page",
+							"value": "5",
 							"type": "text",
 							"disabled": true
 						}
