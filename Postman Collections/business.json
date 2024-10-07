@@ -162,6 +162,18 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "menu",
+					"id": "eb0f1403-7b28-4161-9c29-0fcad9c8ae6a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "f1ca4d45-525d-42bb-a452-8b81482a3db7"
