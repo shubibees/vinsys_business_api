@@ -638,7 +638,28 @@
 				},
 				"method": "GET",
 				"header": [],
-				"url": "{{URL}}api/get-client-by-country"
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}get-business-client-by-country?country_id=102",
+					"host": [
+						"{{URL}}get-business-client-by-country"
+					],
+					"query": [
+						{
+							"key": "country_id",
+							"value": "102",
+							"type": "text"
+						}
+					]
+				}
 			},
 			"response": []
 		}
