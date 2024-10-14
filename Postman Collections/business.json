@@ -615,6 +615,32 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "get-client",
+			"id": "b5378001-713f-425e-8498-930408738f2f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "jwt",
+					"jwt": {
+						"secret": "{{secrete_key}}",
+						"addTokenTo": "header",
+						"payload": "",
+						"algorithm": "HS256",
+						"isSecretBase64Encoded": false,
+						"headerPrefix": "Bearer",
+						"queryParamKey": "token",
+						"header": "{}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "{{URL}}api/get-client-by-country"
+			},
+			"response": []
 		}
 	]
 }
