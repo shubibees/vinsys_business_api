@@ -648,15 +648,14 @@
 					}
 				},
 				"url": {
-					"raw": "{{URL}}get-business-client-by-country?country_id=102",
+					"raw": "{{URL}}get-business-client-by-country?country_id=229",
 					"host": [
 						"{{URL}}get-business-client-by-country"
 					],
 					"query": [
 						{
 							"key": "country_id",
-							"value": "102",
-							"type": "text"
+							"value": "229"
 						}
 					]
 				}
