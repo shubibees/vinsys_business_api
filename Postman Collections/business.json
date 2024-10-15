@@ -591,12 +591,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{URL}}get-business-course-slug/certified-chief-risk-officer-course?course_country_id=229&category_slug=audit-governance-compliance&user_country_id=229",
+					"raw": "{{URL}}get-business-course-slug/certificate-in-esg-principles-and-standards-course?course_country_id=229&category_slug=audit-governance-compliance&user_country_id=229",
 					"host": [
 						"{{URL}}get-business-course-slug"
 					],
 					"path": [
-						"certified-chief-risk-officer-course"
+						"certificate-in-esg-principles-and-standards-course"
 					],
 					"query": [
 						{
