@@ -617,6 +617,54 @@
 			"response": []
 		},
 		{
+			"name": "get-business-course-slug Copy",
+			"id": "72b47660-23a7-4093-a74e-a181289b5c12",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "jwt",
+					"jwt": {
+						"secret": "{{secrete_key}}",
+						"addTokenTo": "header",
+						"payload": "",
+						"algorithm": "HS256",
+						"isSecretBase64Encoded": false,
+						"headerPrefix": "Bearer",
+						"queryParamKey": "token",
+						"header": "{}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}get-business-course-slug/certificate-in-esg-principles-and-standards-course?course_country_id=229&category_slug=audit-governance-compliance&user_country_id=229",
+					"host": [
+						"{{URL}}get-business-course-slug"
+					],
+					"path": [
+						"certificate-in-esg-principles-and-standards-course"
+					],
+					"query": [
+						{
+							"key": "course_country_id",
+							"value": "229"
+						},
+						{
+							"key": "category_slug",
+							"value": "audit-governance-compliance"
+						},
+						{
+							"key": "user_country_id",
+							"value": "229"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "get-client",
 			"id": "b5378001-713f-425e-8498-930408738f2f",
 			"protocolProfileBehavior": {
