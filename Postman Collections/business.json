@@ -344,32 +344,6 @@
 			"response": []
 		},
 		{
-			"name": "get-course-country Copy",
-			"id": "5f220655-e7fe-47b6-8497-3672412a3e57",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"auth": {
-					"type": "jwt",
-					"jwt": {
-						"secret": "{{secrete_key}}",
-						"addTokenTo": "header",
-						"payload": "",
-						"algorithm": "HS256",
-						"isSecretBase64Encoded": false,
-						"headerPrefix": "Bearer",
-						"queryParamKey": "token",
-						"header": "{}"
-					}
-				},
-				"method": "GET",
-				"header": [],
-				"url": "{{URL}}get-business-course-country"
-			},
-			"response": []
-		},
-		{
 			"name": "get-business-delivery-formate_list",
 			"id": "7bc855d0-6275-47fd-9a7b-79d96a60fdd3",
 			"protocolProfileBehavior": {
