@@ -617,54 +617,6 @@
 			"response": []
 		},
 		{
-			"name": "get-business-course-slug Copy",
-			"id": "72b47660-23a7-4093-a74e-a181289b5c12",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"auth": {
-					"type": "jwt",
-					"jwt": {
-						"secret": "{{secrete_key}}",
-						"addTokenTo": "header",
-						"payload": "",
-						"algorithm": "HS256",
-						"isSecretBase64Encoded": false,
-						"headerPrefix": "Bearer",
-						"queryParamKey": "token",
-						"header": "{}"
-					}
-				},
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{URL}}get-course-slug/iso-27001-foundation-certification?course_country_id=249&category_slug=quality-management&user_country_id=249",
-					"host": [
-						"{{URL}}get-course-slug"
-					],
-					"path": [
-						"iso-27001-foundation-certification"
-					],
-					"query": [
-						{
-							"key": "course_country_id",
-							"value": "249"
-						},
-						{
-							"key": "category_slug",
-							"value": "quality-management"
-						},
-						{
-							"key": "user_country_id",
-							"value": "249"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "get-client",
 			"id": "b5378001-713f-425e-8498-930408738f2f",
 			"protocolProfileBehavior": {
